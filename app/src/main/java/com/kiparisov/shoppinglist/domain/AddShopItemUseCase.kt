@@ -1,7 +1,7 @@
 package com.kiparisov.shoppinglist.domain
 
-class AddShopItemUseCase {
+class AddShopItemUseCase(private val repository: ShopListRepository) {
     fun addShopItem(shopItem: ShopItem){
-        TODO()
+        repository.addShopItem(shopItem)
     }
 }

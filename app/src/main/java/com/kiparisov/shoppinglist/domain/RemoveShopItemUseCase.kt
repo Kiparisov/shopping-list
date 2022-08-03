@@ -1,7 +1,7 @@
 package com.kiparisov.shoppinglist.domain
 
-class RemoveShopItemUseCase {
+class RemoveShopItemUseCase(private val repository: ShopListRepository) {
     fun removeShopItem(shopItem: ShopItem){
-        TODO()
+        repository.removeShopItem(shopItem)
     }
 }
